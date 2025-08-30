@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demon Slayers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      /* Dhoni yellow jersey background */
+      background: url("bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    h2 {
+      text-align: center;
+      display: inline-block;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 10px;
+      margin: 20px auto 40px;
+      font-size: 30px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .player-card {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .toggle { display: none; }
+
+    .player-img {
+      width: 180px;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .info {
+      flex: 1;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .toggle:checked ~ .info {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .role {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Demon Slayers</h2>
+
+  <!-- Player 1 -->
+  <div class="player-card">
+    <input type="checkbox" id="babi" class="toggle">
+    <label for="babi">
+      <img src="babi.jpg" alt="Babi" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Babi</div>
+      <div class="role">Wicket Keeper</div>
+    </div>
+  </div>
+
+  <!-- Player 2 -->
+  <div class="player-card">
+    <input type="checkbox" id="kalyan" class="toggle">
+    <label for="kalyan">
+      <img src="kalyan.jpg" alt="Kalyan" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Kalyan</div>
+      <div class="role">Batter</div>
+    </div>
+  </div>
+
+  <!-- Player 3 -->
+  <div class="player-card">
+    <input type="checkbox" id="mohan" class="toggle">
+    <label for="mohan">
+      <img src="mohan.jpg" alt="Mohan" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Mohan</div>
+      <div class="role">Bowler</div>
+    </div>
+  </div>
+
+  <!-- Player 4 -->
+  <div class="player-card">
+    <input type="checkbox" id="sreenu" class="toggle">
+    <label for="sreenu">
+      <img src="sreenu.png" alt="Sreenu" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Sreenu</div>
+      <div class="role">Batter</div>
+    </div>
+  </div>
+
+  <!-- Player 5 -->
+  <div class="player-card">
+    <input type="checkbox" id="rajesh" class="toggle">
+    <label for="rajesh">
+      <img src="rajesh.jpg" alt="Rajesh" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Rajesh</div>
+      <div class="role">Bowler</div>
+    </div>
+  </div>
+
+  <!-- Player 6 -->
+  <div class="player-card">
+    <input type="checkbox" id="guna" class="toggle">
+    <label for="guna">
+      <img src="guna.jpg" alt="Guna" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Guna</div>
+      <div class="role">Batter</div>
+    </div>
+  </div>
+
+  <!-- Player 7 -->
+  <div class="player-card">
+    <input type="checkbox" id="pani" class="toggle">
+    <label for="pani">
+      <img src="pani.jpg" alt="Pani" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Pani</div>
+      <div class="role">Bowler</div>
+    </div>
+  </div>
+    
+        
+  <!-- Player 8 -->
+  <div class="player-card">
+    <input type="checkbox" id="rahul" class="toggle">
+    <label for="rahul">
+      <img src="rahul.jpg" alt="Rahul" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Rahul</div>
+      <div class="role">Wicket Keeper</div>
+    </div>
+  </div>
+      
+  <!-- Player 9 -->
+  <div class="player-card">
+    <input type="checkbox" id="ravikumar" class="toggle">
+    <label for="ravikumar">
+      <img src="ravikumar.jpg" alt="RaviKumar" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Ravi Kumar</div>
+      <div class="role">Batter</div>
+    </div>
+  </div>
+
+   
+  <!-- Player 10 -->
+  <div class="player-card">
+    <input type="checkbox" id="raja" class="toggle">
+    <label for="raja">
+      <img src="raja.jpg" alt="Raja" class="player-img">
+    </label>
+    <div class="info">
+      <div class="name">Raja</div>
+      <div class="role">Bowler</div>
+    </div>
+  </div>
+
+     
+
+
+
+
+
+</body>
+</html>
